@@ -31,6 +31,7 @@
     "@netlify/remix-adapter": "^2.4.0",
     "@remix-run/node": "^2.3.1",
     "@remix-run/react": "^2.3.1",
+    "@sprig-technologies/sprig-browser": "^2.31.1",
     "@supabase/supabase-js": "^2.39.0",
     "@testing-library/cypress": "^10.0.1",
     "cypress": "^13.6.0",

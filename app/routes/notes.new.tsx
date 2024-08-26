@@ -3,6 +3,7 @@ import { json, redirect } from "@remix-run/node";
 import { Form } from "@remix-run/react";
 import { createNote } from "~/models/note.server";
 import { requireUserId } from "~/session.server";
+import React from "react";
 
 export const action: ActionFunction = async ({ request }) => {
   const userId = await requireUserId(request);
@@ -39,7 +40,7 @@ export default function NewNotePage() {
           <span>Title: </span>
           <input
             name="title"
-            className="flex-1 rounded-md border-2 border-blue-500 px-3 text-lg leading-loose"
+            className="flex-1 rounded-md border-2 border-stone-950 px-3 text-lg leading-loose"
           />
         </label>
       </div>
@@ -49,7 +50,7 @@ export default function NewNotePage() {
           <textarea
             name="body"
             rows={8}
-            className="w-full flex-1 rounded-md border-2 border-blue-500 py-2 px-3 text-lg leading-6"
+            className="w-full flex-1 rounded-md border-2 border-stone-950 py-2 px-3 text-lg leading-6"
           ></textarea>
         </label>
       </div>
@@ -57,7 +58,7 @@ export default function NewNotePage() {
       <div className="text-right">
         <button
           type="submit"
-          className="rounded bg-blue-500  py-2 px-4 text-white hover:bg-blue-600 focus:bg-blue-400"
+          className="rounded bg-slate-950  py-2 px-4 text-white hover:bg-slate-500 focus:bg-slate-500"
         >
           Save
         </button>

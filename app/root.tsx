@@ -15,6 +15,7 @@ import {
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
+import React from "react";
 
 export const meta: MetaFunction = () => {
   return [{ title: "New Remix App" }];
@@ -36,6 +37,14 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        {/* <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self' 'unsafe-inline'; img-src data: https://*.mux.com;
+        connect-src blob: data: '*localhost* https://api.sprig.com https://*.mux.com https://storage.googleapis.com https://cdn.sprig.com https://cdn.userleap.com;
+        font-src data:;
+        media-src blob: https://*.mux.com;
+        worker-src blob:;"
+        /> */}
         <Meta />
         <Links />
       </head>
